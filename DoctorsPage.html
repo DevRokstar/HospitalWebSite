@@ -2,12 +2,13 @@
 <html>
     <head>
         <title>Doctor's Dashboard</title>
-        <link rel="stylesheet" href="DoctorsPageStyle.css"> 
+        <link rel="stylesheet" href="DoctorsPageStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     </head>
     <body>
         <nav>
             <div class="container-navigation-bar">
-                <div class="Name_Hospital">
+                <div class="name-hospital">
                     Hospital Name
                 </div>
                 <input class="searchBarPatient" placeholder="Search for a Patient">
@@ -17,8 +18,42 @@
             </div>
         </nav>
         <div class="main-body">
-            <div>
+            <div class="holy-verse">
                 and if anyone saved a life, it would be as if he saved the life of all mankind.
+            </div>
+            <div class="Dashboard">
+                <div class="ControllerNotifications">
+                    <div class="Controller">
+                        <div class="Option">
+                            Personnel Informations
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="Option">
+                            Consultations
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="Option">
+                            Operations
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="Option">
+                            My Patients
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="Notification">
+                        <div id="closest-operation-duration">
+                            06:09:11
+                        </div>
+                        <div class="operation-patient">
+                            Patient : Ihssan Salma
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-information">
+
+                </div>
             </div>
         </div>
     </body>

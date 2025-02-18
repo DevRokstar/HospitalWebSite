@@ -26,7 +26,7 @@ nav{
     padding: 6px 10px 6px 10px;
     border-radius: 60px;
 }
-.Name_Hospital{
+.name-hospital{
     font-family: "Lexend", serif;
     font-weight: bold;
     font-size: 30px;
@@ -38,4 +38,73 @@ nav{
     border-radius: 15px;
     padding: 6px 10px 6px 10px;
     font-weight: 600;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.holy-verse{
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+    padding: 4px 0 4px 0;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    background-color: #90b4ce;
+    
+}
+.Dashboard{
+    margin : 40px 40px 40px 40px;
+    display: flex;
+    flex-direction: row;
+    gap : 40px;
+}
+.ControllerNotifications{
+    gap : 10%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height: 400px;
+}
+.Controller{
+    height: 50%;
+    width: 100%;
+    background-color: #094067;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.Notification{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #ef4565;
+}
+#closest-operation-duration{
+    font-size: 50px;
+}
+.Option , .operation-patient , #closest-operation-duration{
+    margin-left:10px ;
+    color: #fffffe;
+    font-family: "Lexend", serif;
+}
+.Option{
+    transition: transform 500ms;
+}
+.Option:hover{
+    transform: translateX(20px);
+}
+.container-information{
+    height: 400px;
+    flex : 3;
+    background-color: #d8eefe;
+    border-radius: 30px;
 }
