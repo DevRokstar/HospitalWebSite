@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Delius&family=Lexend:wght@100..900&family=Playwrite+IN:wght@100..400&display=swap');
+
+body{
+    margin: 0 0 0 0;
+    background-color: #fffffe;
+}
+nav{
+    background-color: #d8eefe;
+}
+.container-navigation-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    gap : 40px;
+    padding: 0 20px 0 20px;
+}
+.LogOutButtom{
+    width: 100px;
+    background-color: #3da9fc;
+    border: none;
+    color: #fffffe;
+    font-size: 20px;
+    font-family: "Lexend", serif;
+    padding: 6px 10px 6px 10px;
+    border-radius: 60px;
+}
+.Name_Hospital{
+    font-family: "Lexend", serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.searchBarPatient{
+    flex : 1;
+    max-width: 800px;
+    border:none;
+    border-radius: 15px;
+    padding: 6px 10px 6px 10px;
+    font-weight: 600;
+}
