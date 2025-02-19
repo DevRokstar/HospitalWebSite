@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta lang="fr">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <link rel="icon" href="3456426.webp" >
+    <link rel="stylesheet" href="c.css">
+    <h1>REGISTRATION FORM</h1>
+</head>
+<body>
+<form id="Registeration">
+<div class="register">
+
+    <fieldset>
+        <div class="wel">
+           </div>
+
+
+    <div class="name-container">
+        <div class="field">
+            <label for="nom">FirstName:</label>
+            <input type="text" id="nom" name="nom" placeholder="Enter Firstname" maxlength="10" required >
+        </div>
+        <div class="field">
+            <label for="prenom">LastName:</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Enter Lastname" maxlength="15" required>
+        </div>
+        <script src="index.js"></script>
+
+
+    </div>
+
+    <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Ex: awa@gmail.com" pattern=".*@.*" required><br>
+    <label for="CIN">CIN:</label><br>
+        <input type="text" id="CIN" name="CIN" placeholder="Enter CIN" oninput="uppercase()" required><br>
+
+    <div class="pass">
+        <label for="password" class="s">Password:</label><br>
+        <input type="password" id="password" name="pass" placeholder="Enter password" required><br>
+        <input type="checkbox" id="showPassword"> show password<br>
+        <div class="jb">
+        <label for="job">Job:</label><br>
+
+        <input type="text" id="job" name="job" placeholder="Enter Job" required><br>
+            <br>
+            <label for="number">Phone Number*:</label>
+            <input type="text" id="number" name="number" placeholder="06********/07********" maxlength="10" oninput="number()"><br></div>
+
+
+    </div><br>
+
+        <div class="date">
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date" required><br>
+        </div><br>
+    <div class="gender">
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+    </div>
+<br>
+    <div class="ville">
+        <label for="ville">City:</label><br>
+        <input list="list" id="ville" name="ville" placeholder="Enter your city" required>
+        <datalist id="list">
+            <option value="Agadir">Agadir</option>
+            <option value="Ahfir">Ahfir</option>
+            <option value="Ait Melloul">Ait Melloul</option>
+            <option value="Al Hoceima">Al Hoceima</option>
+            <option value="Azemmour">Azemmour</option>
+            <option value="Azilal">Azilal</option>
+            <option value="Beni Mellal">Beni Mellal</option>
+            <option value="Berkane">Berkane</option>
+            <option value="Berrechid">Berrechid</option>
+            <option value="Boujdour">Boujdour</option>
+            <option value="Bouznika">Bouznika</option>
+            <option value="Casablanca">Casablanca</option>
+            <option value="Chefchaouen">Chefchaouen</option>
+            <option value="Dakhla">Dakhla</option>
+            <option value="El Jadida">El Jadida</option>
+            <option value="Errachidia">Errachidia</option>
+            <option value="Essaouira">Essaouira</option>
+            <option value="Fès">Fès</option>
+            <option value="Fquih Ben Salah">Fquih Ben Salah</option>
+            <option value="Guelmim">Guelmim</option>
+            <option value="Ifrane">Ifrane</option>
+            <option value="Kelaat Sraghna">Kelaat Sraghna</option>
+            <option value="Kénitra">Kénitra</option>
+            <option value="Khemisset">Khemisset</option>
+            <option value="Khenifra">Khenifra</option>
+            <option value="Khouribga">Khouribga</option>
+            <option value="Laâyoune">Laâyoune</option>
+            <option value="Larache">Larache</option>
+            <option value="Marrakech">Marrakech</option>
+            <option value="Meknès">Meknès</option>
+            <option value="Midelt">Midelt</option>
+            <option value="Mohammedia">Mohammedia</option>
+            <option value="Nador">Nador</option>
+            <option value="Ouarzazate">Ouarzazate</option>
+            <option value="Oujda">Oujda</option>
+            <option value="Rabat">Rabat</option>
+            <option value="Safi">Safi</option>
+            <option value="Salé">Salé</option>
+            <option value="Settat">Settat</option>
+            <option value="Sidi Bennour">Sidi Bennour</option>
+            <option value="Sidi Ifni">Sidi Ifni</option>
+            <option value="Skhirat">Skhirat</option>
+            <option value="Tan-Tan">Tan-Tan</option>
+            <option value="Tanger">Tanger</option>
+            <option value="Taourirt">Taourirt</option>
+            <option value="Taroudant">Taroudant</option>
+            <option value="Taza">Taza</option>
+            <option value="Tétouan">Tétouan</option>
+            <option value="Tiznit">Tiznit</option>
+
+        </datalist>
+
+    </div>
+   <br>
+    <div class="sub">
+    <input type="submit" value="Register" id="Register">
+        <input type="submit" value="Already Have an account" id="Already Have an account">
+        <input type="reset" value="Reset">
+        <input type="button" value="Cancel" id="Cancel">
+
+
+</div>
+</div>
+</form>
+<script src="index.js">
+
+</script>
+</body>
+</html>
