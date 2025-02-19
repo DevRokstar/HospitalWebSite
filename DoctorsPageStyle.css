@@ -16,7 +16,7 @@ nav{
     gap : 40px;
     padding: 0 20px 0 20px;
 }
-.LogOutButtom{
+.LogOutButton{
     width: 100px;
     background-color: #3da9fc;
     border: none;
@@ -107,4 +107,38 @@ nav{
     flex : 3;
     background-color: #d8eefe;
     border-radius: 30px;
+}
+.Personal-Info-container{
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+.Personal-Info{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0%;
+}
+.personal-info-detail{
+    margin: 10px 0 0 20px;
+    font-family: "Lexend", serif;
+}
+.PrimaryButton{
+    width: max-content;
+    background-color: #04AA6D;
+    border: none;
+    color: #fffffe;
+    font-size: 20px;
+    font-family: "Lexend", serif;
+    padding: 6px 10px 6px 10px;
+    border-radius: 60px;
+}
+.Edit-Button{
+    height: 45%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
