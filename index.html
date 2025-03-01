@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="icon" href="3456426.webp" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #d3d3d3;
+      background-image: url("bg.jpg");
+      background-repeat: no-repeat;
+
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+      width: 50%;
+      max-width: 600px;
+    }
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 100px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">REGISTRATION FORM</h1>
+  <form id="Registration">
+    <legend>Personal Information</legend>    <p style="display: none; color: red" id="error-message">Just Alphabets allowed</p>
+    <div class="mb-3">
+      <label for="nom" class="form-label">First Name:</label>
+      <input type="text" class="form-control" id="nom" name="nom" placeholder="Enter Firstname" maxlength="15" required>
+    </div>
+    <div class="mb-3">
+      <label for="prenom" class="form-label">Last Name:</label>
+      <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Enter Lastname" maxlength="15" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Ex: awa@gmail.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="CIN" class="form-label">CIN:</label>
+      <input type="text" class="form-control" id="CIN" name="CIN" placeholder="Enter CIN" oninput="uppercase()" maxlength="8" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+      <input type="checkbox" id="showPassword"> show password<br>
+    </div>
+    <div class="mb-3">
+      <label for="job" class="form-label">Job:</label>
+      <input type="text" class="form-control" id="job" name="job" placeholder="Enter Job" required>
+
+    </div>
+    <div class="mb-3">
+      <label for="number" class="form-label">Phone Number:</label>
+      <input type="text" class="form-control" id="number" name="number" placeholder="06********/07********" maxlength="10"  required>
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Date of Birth(18 or older):</label>
+      <input type="date" class="form-control" id="date" name="date" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+    </div>
+    <div class="mb-3">
+      <label for="ville" class="form-label">City:</label>
+      <select list="list" class="form-select" id="ville" name="ville" placeholder="Enter your city" required>
+
+        <datalist id="list">
+          <option value="Agadir">Agadir</option>
+          <option value="Ahfir">Ahfir</option>
+          <option value="Ait Melloul">Ait Melloul</option>
+          <option value="Al Hoceima">Al Hoceima</option>
+          <option value="Azemmour">Azemmour</option>
+          <option value="Azilal">Azilal</option>
+          <option value="Beni Mellal">Beni Mellal</option>
+          <option value="Berkane">Berkane</option>
+          <option value="Berrechid">Berrechid</option>
+          <option value="Boujdour">Boujdour</option>
+          <option value="Bouznika">Bouznika</option>
+          <option value="Casablanca">Casablanca</option>
+          <option value="Chefchaouen">Chefchaouen</option>
+          <option value="Dakhla">Dakhla</option>
+          <option value="El Jadida">El Jadida</option>
+          <option value="Errachidia">Errachidia</option>
+          <option value="Essaouira">Essaouira</option>
+          <option value="Fès">Fès</option>
+          <option value="Fquih Ben Salah">Fquih Ben Salah</option>
+          <option value="Guelmim">Guelmim</option>
+          <option value="Ifrane">Ifrane</option>
+          <option value="Kelaat Sraghna">Kelaat Sraghna</option>
+          <option value="Kénitra">Kénitra</option>
+          <option value="Khemisset">Khemisset</option>
+          <option value="Khenifra">Khenifra</option>
+          <option value="Khouribga">Khouribga</option>
+          <option value="Laâyoune">Laâyoune</option>
+          <option value="Larache">Larache</option>
+          <option value="Marrakech">Marrakech</option>
+          <option value="Meknès">Meknès</option>
+          <option value="Midelt">Midelt</option>
+          <option value="Mohammedia">Mohammedia</option>
+          <option value="Nador">Nador</option>
+          <option value="Ouarzazate">Ouarzazate</option>
+          <option value="Oujda">Oujda</option>
+          <option value="Rabat">Rabat</option>
+          <option value="Safi">Safi</option>
+          <option value="Salé">Salé</option>
+          <option value="Settat">Settat</option>
+          <option value="Sidi Bennour">Sidi Bennour</option>
+          <option value="Sidi Ifni">Sidi Ifni</option>
+          <option value="Skhirat">Skhirat</option>
+          <option value="Tan-Tan">Tan-Tan</option>
+          <option value="Tanger">Tanger</option>
+          <option value="Taourirt">Taourirt</option>
+          <option value="Taroudant">Taroudant</option>
+          <option value="Taza">Taza</option>
+          <option value="Tétouan">Tétouan</option>
+          <option value="Tiznit">Tiznit</option>
+
+      </select>
+    </div>
+    <div class="text-center">
+      <input type="submit"class="btn btn-primary" value="Register" id="Register">
+      <input type="submit"class="btn btn-primary" value="Already Have an account" id="Already Have an account">
+      <input type="reset"class="btn btn-primary" value="Reset">
+      <input type="button"class="btn btn-primary" value="Cancel" id="Cancel">
+    </div>
+
+  </form>
+</div>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
